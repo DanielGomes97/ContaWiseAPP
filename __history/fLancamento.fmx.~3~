@@ -1,0 +1,447 @@
+object FrmLancamento: TFrmLancamento
+  Size.Width = 480.000000000000000000
+  Size.Height = 800.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle6: TRectangle
+    Align = Client
+    Fill.Color = xFFEDEDED
+    HitTest = False
+    Opacity = 0.699999988079071000
+    Size.Width = 480.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object Layout1: TLayout
+    Align = Center
+    Size.Width = 429.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle7: TRectangle
+      Align = Contents
+      Fill.Color = claLightgray
+      HitTest = False
+      Size.Width = 429.000000000000000000
+      Size.Height = 504.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Layout2: TLayout
+      Align = Bottom
+      Position.Y = 435.000000000000000000
+      Size.Width = 429.000000000000000000
+      Size.Height = 69.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object BtnNovo: TRectangle
+        Cursor = crHandPoint
+        Fill.Color = xFF0C7EDC
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 7.000000000000000000
+        YRadius = 7.000000000000000000
+        object Label9: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Locked = True
+          Size.Width = 105.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Novo'
+          TabOrder = 0
+        end
+      end
+      object BtnSalvar: TRectangle
+        Cursor = crHandPoint
+        Fill.Color = xFF0C7EDC
+        Position.X = 162.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 7.000000000000000000
+        YRadius = 7.000000000000000000
+        object Label10: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Locked = True
+          Size.Width = 105.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Salvar'
+          TabOrder = 0
+        end
+      end
+      object BtnCancelar: TRectangle
+        Cursor = crHandPoint
+        Fill.Color = xFF0C7EDC
+        Position.X = 296.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 7.000000000000000000
+        YRadius = 7.000000000000000000
+        object Label11: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Locked = True
+          Size.Width = 105.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Cancelar'
+          TabOrder = 0
+        end
+      end
+    end
+    object Layout3: TLayout
+      Align = Top
+      Size.Width = 429.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle1: TRectangle
+        Align = Contents
+        Fill.Color = xFF0C7EDC
+        HitTest = False
+        Size.Width = 429.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object Layout5: TLayout
+        Align = Left
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+      object Layout6: TLayout
+        Align = Right
+        Position.X = 379.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object BtnFechar: TRectangle
+          Align = Center
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+            87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0247494441546843ED98BF8FD33014C7DF8B1DB60306240EC17003881F62E344
+            59A0BA1FF04F535D003170122312038C202160803240AF768C5F6447D5B54DEC
+            F86540F8B354B652F7FB499E1DD790C96432994C28F3C387F77E1E4F6EB9263B
+            3FA68F6ED26FB8661085FBEC65FEECC11D0D30AB8D79353F9EDC75DD6C343746
+            2E5F14BAAE7E3DDDBFEFBA7B41F7D949135E899312E11AB597005F04E2E1C5D9
+            E9FBE6824428BC31AA9220AE371DAAFE6A2EC0D1CEF3B7EF9A7607BD02E7C37B
+            B824D6C27B02257A4BA85CC83F12F5C2355B4A805D6DCC494A396D0D6F59CAC2
+            56ABB055DB4D5009FD9E4EF694541582D8735D2D439F4467F888318304084E09
+            AEF044B000C121C1199E8812205224B8C313D102C4108931C2138304881889B1
+            C21383058810096357F4B1C213490244970418F806B8ACED5BE3AAEB69E1084F
+            240B109D121BE00A4FB00810A1129CE109360182241652BDDE54EF849D0FDF0D
+            E213AEF044F0763A84B312CAD208E19A6BB0DE2D079B805F2A0DC2AEEBDAC495
+            D40DE079586E4AD73ABF09CE7990FC043AC3DB6594C2BA560BC756DC9324D0F7
+            86AD0B9CA22A1E6B509F5C770B97C4E0128AD91ED09F759467950079A3B96085
+            D4721A241013DE339644B4C090F09E3124A20452C27B48828E4F52C658257812
+            7384272EBF7CF311511E28D09F5D57CB90891DF404B8C2AFC23566AFC018E13D
+            1C63F79790D6853162EDBAD4F0C4A5D9E987ADE5A4EC5B04F5D67D9527AC840E
+            F66FD75854FFE4D1A2C74BD86F2067784F2BA1B00C0D1FCDD8C7EB3476ECF17A
+            2693C964FE6700FE02CE6CF98F66A2508A0000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object Layout7: TLayout
+        Align = Client
+        Size.Width = 329.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Size.Width = 329.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Cadastro de Lan'#231'amento'
+          TabOrder = 0
+        end
+      end
+    end
+    object Layout4: TLayout
+      Align = Client
+      Size.Width = 429.000000000000000000
+      Size.Height = 385.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout8: TLayout
+        Align = Client
+        Size.Width = 429.000000000000000000
+        Size.Height = 327.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'Edit'
+          TabOrder = 10
+          Position.X = 32.000000000000000000
+          Position.Y = 33.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label3: TLabel
+          Position.X = 32.000000000000000000
+          Position.Y = 12.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'C'#243'digo'
+          TabOrder = 6
+        end
+        object Edit2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'edit'
+          TabOrder = 7
+          Position.X = 112.000000000000000000
+          Position.Y = 33.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label4: TLabel
+          Position.X = 112.000000000000000000
+          Position.Y = 12.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Descri'#231#227'o'
+          TabOrder = 1
+        end
+        object Edit3: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'edit'
+          TabOrder = 9
+          Position.X = 32.000000000000000000
+          Position.Y = 100.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label5: TLabel
+          Position.X = 32.000000000000000000
+          Position.Y = 79.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Valor'
+          TabOrder = 5
+        end
+        object EditCategoria: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'edit'
+          TabOrder = 8
+          ReadOnly = True
+          Position.X = 176.000000000000000000
+          Position.Y = 100.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object Label6: TLabel
+          Position.X = 176.000000000000000000
+          Position.Y = 79.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Categoria'
+          TabOrder = 4
+        end
+        object Layout10: TLayout
+          Position.X = 32.000000000000000000
+          Position.Y = 192.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 11
+          object Edit5: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 6
+            KeyboardType = NumberPad
+            ReturnKeyType = Next
+            MaxLength = 3
+            FilterChar = '0123456789'
+            Position.X = 24.000000000000000000
+            Position.Y = 51.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label8: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Quantidade de Parcela'
+            TabOrder = 5
+          end
+        end
+        object RadioButton3: TRadioButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 112.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 2
+          Text = 'N'#227'o'
+        end
+        object RadioButton4: TRadioButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 32.000000000000000000
+          Position.Y = 163.000000000000000000
+          Size.Width = 81.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Sim'
+        end
+        object Label7: TLabel
+          Position.X = 32.000000000000000000
+          Position.Y = 145.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = #201' PARCELADO?'
+          TabOrder = 0
+        end
+      end
+      object Layout9: TLayout
+        Align = Top
+        Size.Width = 429.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Position.X = 32.000000000000000000
+          Position.Y = 11.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tipo de Lan'#231'amento'
+          TabOrder = 0
+        end
+        object RadioButton1: TRadioButton
+          Position.X = 39.000000000000000000
+          Position.Y = 33.000000000000000000
+          TabOrder = 2
+          Text = 'Entrada'
+        end
+        object RadioButton2: TRadioButton
+          Position.X = 135.000000000000000000
+          Position.Y = 33.000000000000000000
+          TabOrder = 1
+          Text = 'Sa'#237'da'
+        end
+      end
+    end
+    object LVCombo: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Contents
+      Size.Width = 429.000000000000000000
+      Size.Height = 541.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Visible = False
+      object Layout11: TLayout
+        Align = Top
+        Size.Width = 429.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle2: TRectangle
+          Align = Contents
+          Fill.Color = xFF3C8EE6
+          Size.Width = 429.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object Layout12: TLayout
+          Align = Right
+          Position.X = 379.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object LblFecharLV: TLabel
+            Align = Client
+            Cursor = crHandPoint
+            StyledSettings = [Family, Style]
+            HitTest = True
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'X'
+            TabOrder = 0
+          end
+        end
+        object Layout13: TLayout
+          Align = Client
+          Size.Width = 329.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label12: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Size.Width = 329.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Escolha uma op'#231#227'o'
+            TabOrder = 0
+          end
+        end
+        object Layout14: TLayout
+          Align = Left
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end

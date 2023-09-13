@@ -1,0 +1,58 @@
+unit uCadastroUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts;
+
+type
+  TForm1 = class(TForm)
+    LoBase: TLayout;
+    RBackground: TRectangle;
+    LoTopo: TLayout;
+    RBackgroundTopo: TRectangle;
+    LoTopoRight: TLayout;
+    LoTopoLeft: TLayout;
+    LoTopoCenter: TLayout;
+    Label1: TLabel;
+    LoCorpo: TLayout;
+    Layout1: TLayout;
+    Image1: TImage;
+    Layout2: TLayout;
+    Layout4: TLayout;
+    Layout5: TLayout;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Layout6: TLayout;
+    Label3: TLabel;
+    Edit2: TEdit;
+    Rectangle1: TRectangle;
+    Label5: TLabel;
+    Layout3: TLayout;
+    Label9: TLabel;
+    Label10: TLabel;
+    LoRodape: TLayout;
+    Rectangle3: TRectangle;
+    Label8: TLabel;
+    Layout7: TLayout;
+    Label4: TLabel;
+    Edit3: TEdit;
+    Layout8: TLayout;
+    Label6: TLabel;
+    Edit4: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+end.

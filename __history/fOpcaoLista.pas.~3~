@@ -1,0 +1,46 @@
+unit fOpcaoLista;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Effects, FMX.Objects, FMX.Controls.Presentation, FMX.Layouts;
+
+type
+  TFrameOpcaoLista = class(TFrame)
+    Layout1: TLayout;
+    RFundoMensagem: TRectangle;
+    RBackgroundTopo: TRectangle;
+    LblTituloMensagem: TLabel;
+    BtnFechar: TRectangle;
+    Label5: TLabel;
+    Layout3: TLayout;
+    ImgConfirmacao: TImage;
+    ImgInformacao: TImage;
+    ImgSucesso: TImage;
+    Layout2: TLayout;
+    Layout4: TLayout;
+    BtnEditar: TRectangle;
+    LblConfirmar: TLabel;
+    BtnPagar: TRectangle;
+    LblCancelar: TLabel;
+    ShadowEffect1: TShadowEffect;
+    Layout6: TLayout;
+    LblValor: TLabel;
+    LblParcela: TLabel;
+    Layout5: TLayout;
+    LblDescricao: TLabel;
+    LblCodigo: TLabel;
+    Rectangle1: TRectangle;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.fmx}
+
+end.

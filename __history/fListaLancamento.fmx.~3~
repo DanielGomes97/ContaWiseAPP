@@ -1,0 +1,218 @@
+object FrameLista: TFrameLista
+  Size.Width = 480.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle2: TRectangle
+    Align = Client
+    Fill.Color = claWhitesmoke
+    Size.Width = 480.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 6.000000000000000000
+    YRadius = 6.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Client
+    Margins.Top = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Size.Width = 480.000000000000000000
+    Size.Height = 66.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = Left
+      Size.Width = 70.000000000000000000
+      Size.Height = 66.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object ImgPago: TImage
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              05AE494441546843ED996B6C145514C7CF9D59BAED1604FAA2880F486961CB43
+              11A3BCC1C460D9A29818831F20C6881A3F082614D02F12E2072D4513D10F6062
+              8C8A1F141313A0B54113E803A346E44D35D8186330D0279276A1E9CC5CCF993D
+              BBDDD99DD9DD29331293FE92A6E79C9DBDF33FF79E7BEFCC5E18638C5B43F07F
+              CF79AFA926383441BC2BA4907903C6D62D91E621FEC8537C49A0A1B5A61A84FC
+              0A400DC7227A87AEAB4FBDB6AAA923E67B87C2FF5DF1CEF7AB8B761E5B99CFAE
+              85869648ADA62B6D23E209352C25B4D7B7D744386081DAA236D975C5A846A0A1
+              2DD2AE69B0241080CBE87682019D86909D024499AEC3668CDBB68BDF91AA0A7B
+              25C82E458A0AECBE0A0C57607C9AAAC089ED2B9B96C7AECC1DD709EC395EB340
+              AACA2FEC7A8AD08D07EA56359F6237275C97108A7F814DCF3154B189CD9C7135
+              02F5ED4F4C50866F5E8640600287BCE61F880E4FDBF6D8B783EC67C5D508A8FA
+              F07A1FC513132134EE19B67322A711D8F9F3DAD0F8A8BE1E847803DDE9B1A83F
+              E03CFF2320E1CD8190FAC5AE078F4439EC48C60476B7D53E2AC078112F7B1C5D
+              DB65D3476EE28C3B2C41F970FBF2C6EF3896866D02BB8F45CAB1B8BE160A2CE2
+              D06D451AF0435E9EFAE4AB8B0F5FE55002DB39102C30A2FFB5F8FCFC02B6D221
+              2D420CDF60D7826D025B16355FD740EB61D777CA4ACB61F1C2655031BD922369
+              749326B62D38AE42B8AB76B2E92B534AA7C29CAA79784301F7DC350366CEA8E2
+              4F46C01272D4E2988022D5DFD9F48DE2A252985D35D7141F67DAD47B205450C8
+              5E0CA148472DCEFB003EDBB0E50BD4F3F3C3F7839224DE300C387BF114446FA4
+              ED63EE4700A42863CB73CACBA642754ACFC7C5F75FEBE54832CE5AEC97D1D6C8
+              066CFB33763D85C4872BDD888F2184B1A16E59F3E7EC26484BE0EDE391B0A2C2
+              4FF8C1780E7986BD781DCE5D3C037DD7322F7A1260002F7D28F5A5C85242F4C8
+              008AF165AEE20BF2436C65A7B4640ACCAE9C63158F6F39E77F3D9B553C616A42
+              6DA6C6242C0914DE303E5085825D941D5AB3172D5C6A4EC66C9497DD097367CD
+              47ED23B7337BFEC229E8EDEBE64876481B6964D7C43A8925E4B195115AAB69CD
+              A6DEA4C9982909121F4EED7912DF713AA79E4F45801CC7A6892581417D709301
+              C649766D290C159A6B75021416AE9A03A5C5E90B455949795AD948DC952EFE76
+              0EFAFA9D27AC13A46D408B5A5EA8465A661A4E44EE055D9EC49B1673288DC993
+              8A617EF5025094A4FCB19E3B2E5D802B5D7F9B2EF53C6D52C937A09E3FDF7106
+              7AFB47F19422652FD6D0C26D4B9BFEE488495A02447DEB9AB5862E0E39BD9C13
+              45934A605EF57D9884CA118493A00E9F85AB8D67E235CD305475DD8E15DF1CE1
+              480247810DAD6BF6A19297D8B5A504CB66EE6CEBE4949884D9684AD95CC0B2E9
+              EE497B1ACE096C72DFF6154D2FB36BC13A8993C07537EBF2D0D3DB656E40D4BB
+              7104094F121FDBA44E8F5A3C81AD396A714E40C04C36334293914A8384A64231
+              73B5194DD924218574D4E298007E8B7E74CA09AA6B129A9C8457E2091C01472D
+              8E096055E49C004142E323417F647B21DE443A6B1929D624DE6AAB9D1C00D9C7
+              AE2BE8ED4AE004BADA738523DEA081287A7D79633FBB096C4740D564905EA4D9
+              754557F715CFC59396828062FB94603B0271EA8FD7560AD5785ED7C473B827F8
+              F67E6087A641971A901F4B5DF968C7AAC64B1C4E23630271FEB73F6CA5D2D01A
+              D988DFF8945D5FC04D6B236E5A07D8CD8AF3326AC3803E7810877654933B47BA
+              8303C641B673C25502BB1E69B91950A56F2320411E707B96E62A0142A8EA7E3A
+              6961D733A84D298CFDECE68CAB3910C7E988095B9B6268E2954C474C4A40BE8F
+              E95FBD6D474C041DC85D1F1A8A52497128C1EE96C83A7C38FD04CD89B1480C0D
+              F46BE344E0D9BA658D873894800EF9EE0806435B971C753DBF46954036F6B4AC
+              BE5B53C44115D487C9D741FF3160C8A7EB561EFDCBBCC0437C4980300FBA0BC5
+              5EB2838372B35F07DD638C714B00FC0B9CC13311B59980670000000049454E44
+              AE426082}
+          end
+          item
+            Scale = 100.000000000000000000
+          end>
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object LblStatus: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 52.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 14.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Trailing
+        Text = 'Pendente'
+        TabOrder = 1
+      end
+    end
+    object Layout3: TLayout
+      Align = Client
+      Size.Width = 334.000000000000000000
+      Size.Height = 66.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object LblParcela: TLayout
+        Align = Right
+        Position.X = 290.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label4: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Locked = True
+          Size.Width = 44.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Trailing
+          Text = '0 / 0'
+          TabOrder = 1
+        end
+      end
+      object Layout6: TLayout
+        Align = Client
+        Size.Width = 290.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object LblDescricao: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 290.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Descri'#231#227'o da venda/receita'
+          TabOrder = 1
+        end
+      end
+      object Layout7: TLayout
+        Align = Top
+        Size.Width = 334.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object LblData: TLabel
+          Align = Right
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 266.000000000000000000
+          Size.Width = 68.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.HorzAlign = Trailing
+          Text = '00/00/0000'
+          TabOrder = 1
+        end
+        object LblCategoria: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 266.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          Text = 'Categoria'
+          TabOrder = 0
+        end
+      end
+    end
+    object Layout5: TLayout
+      Align = Right
+      Position.X = 404.000000000000000000
+      Size.Width = 76.000000000000000000
+      Size.Height = 66.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object RecBarColor: TRectangle
+        Align = Right
+        Fill.Color = xFFD42626
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 4.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object LblValor: TLabel
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 72.000000000000000000
+        Size.Height = 66.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = 'R$ 1.550,99'
+        TabOrder = 1
+      end
+    end
+  end
+end

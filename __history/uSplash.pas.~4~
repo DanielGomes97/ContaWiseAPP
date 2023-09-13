@@ -1,0 +1,93 @@
+unit uSplash;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.Ani;
+
+type
+  TFrmSplash = class(TForm)
+    LoBase: TLayout;
+    RBackground: TRectangle;
+    LoTopo: TLayout;
+    RBackgroundTopo: TRectangle;
+    LoTopoRight: TLayout;
+    BtnTest: TRectangle;
+    Label1: TLabel;
+    LoTopoLeft: TLayout;
+    LoTopoCenter: TLayout;
+    LblTituloLogin: TLabel;
+    LoCorpo: TLayout;
+    Layout1: TLayout;
+    ImageLogo: TImage;
+    Layout2: TLayout;
+    Layout3: TLayout;
+    LblDesenvolvedor: TLabel;
+    LblVersao: TLabel;
+    LoRodape: TLayout;
+    Rectangle3: TRectangle;
+    LblDireitosAutorais: TLabel;
+    Layout4: TLayout;
+    ProgressBar1: TProgressBar;
+    Layout5: TLayout;
+    Label2: TLabel;
+    Layout6: TLayout;
+    Label3: TLabel;
+    Timer1: TTimer;
+    FloatAnimationProgressValue: TFloatAnimation;
+    procedure FloatAnimationProgressValueProcess(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure AnimaProgress(Animation: TFloatAnimation; Start, Stop: Single);
+    procedure FloatAnimationProgressValueFinish(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmSplash: TFrmSplash;
+
+implementation
+
+{$R *.fmx}
+
+procedure TFrmSplash.FloatAnimationProgressValueFinish(Sender: TObject);
+begin
+    if ProgressBar1.Value = 1 then
+       Label3.Text := 'Carregando interface';
+    if ProgressBar1.Value = 20 then
+       Label3.Text := 'Carregando informações';
+    if ProgressBar1.Value = 50 then
+       Label3.Text := 'Carregando componentes';
+    if ProgressBar1.Value = 80 then
+       Label3.Text := 'Carregando banco de dados';
+    if ProgressBar1.Value = 100 then
+       Label3.Text := 'Todas informações estão carregando';
+end;
+
+procedure TFrmSplash.FloatAnimationProgressValueProcess(Sender: TObject);
+begin
+    Label1.Text := ProgressBar1.Value.ToString + '%';
+end;
+
+procedure TFrmSplash.AnimaProgress(Animation: TFloatAnimation; Start, Stop: Single);
+begin
+    Animation.Tag := 0;
+    Animation.Stop;
+    Animation.StartValue := Start;
+    Animation.StopValue  := Stop;
+    Animation.Start;
+end;
+
+procedure TFrmSplash.FormCreate(Sender: TObject);
+begin
+    AnimaProgress(FloatAnimationProgressValue, 0, 100);
+    //FloatAnimationProgressValue.
+
+end;
+
+end.

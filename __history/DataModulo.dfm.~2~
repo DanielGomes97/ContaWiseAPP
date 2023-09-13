@@ -1,0 +1,34 @@
+object DM: TDM
+  Height = 480
+  Width = 640
+  object TblLancamento: TFDTable
+    Left = 40
+    Top = 40
+  end
+  object DsTblLancamento: TDataSource
+    DataSet = TblLancamento
+    Left = 128
+    Top = 40
+  end
+  object DsTblCategoria: TDataSource
+    DataSet = TblCategoria
+    Left = 128
+    Top = 96
+  end
+  object TblCategoria: TFDTable
+    Left = 40
+    Top = 96
+  end
+  object FDTable3: TFDTable
+    Left = 40
+    Top = 152
+  end
+  object DataSource3: TDataSource
+    Left = 128
+    Top = 152
+  end
+  object FDQuery1: TFDQuery
+    Left = 368
+    Top = 344
+  end
+end

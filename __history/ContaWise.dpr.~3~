@@ -1,0 +1,31 @@
+program ContaWise;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  uPrincipal in 'uPrincipal.pas' {FrmPrincipal},
+  fListaLancamento in 'fListaLancamento.pas' {FrameLista: TFrame},
+  DataModulo in 'DataModulo.pas' {DM: TDataModule},
+  fLancamento in 'fLancamento.pas' {FrmLancamento: TFrame},
+  uLoading in 'Units\uLoading.pas',
+  VariaveisGlobais in 'VariaveisGlobais.pas',
+  Funcoes in 'Function\Funcoes.pas',
+  fMensagem in 'fMensagem.pas' {FrameMensagem: TFrame},
+  uLogin in 'uLogin.pas' {FrmLogin},
+  uCadastroLancamento in 'uCadastroLancamento.pas' {FrmCadastroLancamento},
+  uCadastroUsuario in 'uCadastroUsuario.pas' {FrmCadastroUsuario},
+  fOpcaoLista in 'fOpcaoLista.pas' {FrameOpcaoLista: TFrame},
+  uSplash in 'uSplash.pas' {FrmSplash};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmCadastroLancamento, FrmCadastroLancamento);
+  Application.CreateForm(TFrmSplash, FrmSplash);
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TFrmCadastroUsuario, FrmCadastroUsuario);
+  Application.Run;
+end.

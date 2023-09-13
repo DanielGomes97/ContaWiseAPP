@@ -1,0 +1,148 @@
+unit fMensagem;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Layouts, FMX.Objects, FMX.Effects, FMX.Edit;
+
+type
+  TFrameMensagem = class(TFrame)
+    Rectangle1: TRectangle;
+    Layout1: TLayout;
+    RFundoMensagem: TRectangle;
+    RBackgroundTopo: TRectangle;
+    LblTituloMensagem: TLabel;
+    BtnFechar: TRectangle;
+    LblTextoMensagem: TLabel;
+    Layout2: TLayout;
+    BtnConfirmar: TRectangle;
+    LblConfirmar: TLabel;
+    BtnCancelar: TRectangle;
+    LblCancelar: TLabel;
+    Label5: TLabel;
+    ShadowEffect1: TShadowEffect;
+    Rectangle2: TRectangle;
+    Layout3: TLayout;
+    ImgConfirmacao: TImage;
+    ImgInformacao: TImage;
+    ImgSucesso: TImage;
+    Layout4: TLayout;
+    Layout6: TLayout;
+    Label1: TLabel;
+    EditNomeLista: TEdit;
+    LoPainelEdit: TLayout;
+    procedure MostraMensagem(TipoJanela, Titulo, Texto: String; MostraMsg: Boolean);
+    procedure BtnFecharClick(Sender: TObject);
+    procedure BtnConfirmarClick(Sender: TObject);
+    procedure BtnCancelarClick(Sender: TObject);
+
+  private
+    procedure EsconderImagens;
+    procedure PainelMensagemPadrao;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.fmx}
+
+uses VariaveisGlobais;
+
+
+//TITULO, TEXTO, ATIVO, TIPO.
+
+//SUCESSO,  [SUCESSO [OK]                           //GREEN
+//CONFIRMAÇÃO [TEM CERTEZA? [CONFIRMAR, CANCELAR],  //BLUE
+//INFORMATIVO [ESSE REGISTRO NÃO ESTÁ VALIDO [CONFIRMAR],  //BLUE
+//FALHA [ESSE REGISTRO NÃO ESTÁ VALIDO [OK],  //RED
+//ATENÇÃO [TEM CERTEZA? [SIM, NÃO],                 //RED
+//FALHA
+{
+xMsgSUCESSO    : String = 'SUCESSO';
+xMsgCONFIRMAÇÃO: String = 'CONFIRMAÇÃO';
+xMsgINFORMATIVA: String = 'INFORMATIVA';
+xMsgERRO: String = 'ERRO';
+xMsgATENÇÃO: String = 'ATENÇÃO';  }
+
+procedure TFrameMensagem.BtnCancelarClick(Sender: TObject);
+begin
+    if BtnCancelar.Tag = 0 then
+       MostraMensagem('','','', False);
+end;
+
+procedure TFrameMensagem.BtnConfirmarClick(Sender: TObject);
+begin
+    if BtnConfirmar.Tag = 0 then
+    begin
+        MostraMensagem('','','', False);
+        exit;
+    end;
+end;
+
+procedure TFrameMensagem.BtnFecharClick(Sender: TObject);
+begin
+    MostraMensagem('','','', False);
+    //exit;
+end;
+
+procedure TFrameMensagem.EsconderImagens;
+begin
+    ImgConfirmacao.Visible := False;
+    ImgInformacao.Visible := False;
+    ImgSucesso.Visible := False;
+end;
+
+procedure TFrameMensagem.PainelMensagemPadrao;
+begin
+    BtnConfirmar.Align := TAlignLayout.Left;
+    BtnConfirmar.Visible := True;
+    BtnCancelar.Align  := TAlignLayout.Right;
+    BtnCancelar.Visible := True;//300
+    BtnConfirmar.Width := 155;
+    LblConfirmar.Text := 'Confirmar';
+    LblCancelar.Text := 'Cancelar';
+    LblTextoMensagem.Visible := True;
+    LoPainelEdit.Visible      := False;
+    EditNomeLista.Text := '';
+end;
+
+procedure TFrameMensagem.MostraMensagem(TipoJanela, Titulo, Texto: String; MostraMsg: Boolean);
+begin
+    visible := MostraMsg;
+    if not MostraMsg then exit;
+    LblTituloMensagem.Text := Titulo;
+    LblTextoMensagem.Text  := Texto;
+    PainelMensagemPadrao;
+    EsconderImagens;
+
+    //OK
+    if (TipoJanela = xMsgTipoSUCESSO) or (TipoJanela = xMsgTipoINFORMATIVA) or (TipoJanela = xMsgTipoNOME) then
+    begin
+        LblConfirmar.Text := 'OK';
+        if TipoJanela = xMsgTipoSUCESSO then ImgSucesso.Visible := True;
+        if TipoJanela = xMsgTipoINFORMATIVA then    ImgInformacao.Visible := True;
+        if TipoJanela = xMsgTipoNOME then
+        begin
+            LblTextoMensagem.Visible := False;
+            LoPainelEdit.Visible      := True;
+        end;
+        BtnCancelar.Visible := False;
+        BtnConfirmar.Align := TAlignLayout.Client;
+    end;
+
+    //CONFIRMAR/ CANCELAR
+    if TipoJanela = xMsgTipoCONFIRMAÇÃO then  ImgConfirmacao.Visible := True;
+    {if TipoJanela = xMsgTipoNOME then
+    begin
+        LblTituloMensagem.Visible := False;
+        LoPainelEdit.Visible      := True;
+    end;   }
+
+
+end;
+
+end.

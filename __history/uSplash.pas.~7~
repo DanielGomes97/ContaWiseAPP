@@ -1,0 +1,78 @@
+unit uSplash;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.Ani;
+
+type
+  TFrmSplash = class(TForm)
+    LoBase: TLayout;
+    RBackground: TRectangle;
+    LoTopo: TLayout;
+    RBackgroundTopo: TRectangle;
+    LoTopoRight: TLayout;
+    BtnTest: TRectangle;
+    Label1: TLabel;
+    LoTopoLeft: TLayout;
+    LoTopoCenter: TLayout;
+    LblTituloLogin: TLabel;
+    LoCorpo: TLayout;
+    Layout1: TLayout;
+    ImageLogo: TImage;
+    Layout2: TLayout;
+    Layout3: TLayout;
+    LblDesenvolvedor: TLabel;
+    LblVersao: TLabel;
+    LoRodape: TLayout;
+    Rectangle3: TRectangle;
+    LblDireitosAutorais: TLabel;
+    Layout4: TLayout;
+    ProgressBar1: TProgressBar;
+    Timer1: TTimer;
+    FloatAnimationProgressValue: TFloatAnimation;
+    procedure FormCreate(Sender: TObject);
+    procedure AnimaProgress(Animation: TFloatAnimation; Start, Stop: Single);
+    procedure FloatAnimationProgressValueFinish(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmSplash: TFrmSplash;
+
+implementation
+
+{$R *.fmx}
+
+uses uLogin;
+
+procedure TFrmSplash.AnimaProgress(Animation: TFloatAnimation; Start, Stop: Single);
+begin
+    Animation.Tag := 0;
+    Animation.Stop;
+    Animation.StartValue := Start;
+    Animation.StopValue  := Stop;
+    Animation.Start;
+end;
+
+procedure TFrmSplash.FloatAnimationProgressValueFinish(Sender: TObject);
+begin
+    //se nao existe registro no banco... abra o login.
+    FrmLogin := TFrmLogin.Create(Self);
+    FrmLogin.Show;
+
+    //senao abra o menu principal
+end;
+
+procedure TFrmSplash.FormCreate(Sender: TObject);
+begin
+    AnimaProgress(FloatAnimationProgressValue, 0, 100);
+end;
+
+end.

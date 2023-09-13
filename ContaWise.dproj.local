@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/07/11 18:05:29.000.819,=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/20 20:04:01.000.932,=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/20 20:58:56.000.187,=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/07/20 20:59:01.000.103,=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/07/20 20:59:33.000.540,=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2023/07/20 21:02:43.000.118,C:\Users\Daniel\Desktop\Controle Financeiro\uPrincipal.fmx=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2023/07/20 21:02:43.000.118,C:\Users\Daniel\Desktop\Controle Financeiro\uPrincipal.pas=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/20 21:03:12.000.145,C:\Users\Daniel\Desktop\Controle Financeiro\fListaLancamento.pas=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/07/20 21:03:12.000.145,C:\Users\Daniel\Desktop\Controle Financeiro\fListaLancamento.fmx=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2023/07/20 21:03:33.000.586,C:\Users\Daniel\Desktop\Controle Financeiro\DataModulo.dfm=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2023/07/20 21:03:33.000.586,C:\Users\Daniel\Desktop\Controle Financeiro\DataModulo.pas=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/07/20 21:04:00.000.866,C:\Users\Daniel\Desktop\Controle Financeiro\fLancamento.pas=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2023/07/20 21:04:00.000.866,C:\Users\Daniel\Desktop\Controle Financeiro\fLancamento.fmx=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Unit4.fmx</Transaction>
+    <Transaction>2023/07/20 21:04:11.000.875,C:\Users\Daniel\Desktop\Controle Financeiro\ControleFinanceiro.dproj=C:\Users\Daniel\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/07/20 21:52:51.000.231,=E:\Delphi\Projetos\Controle Financeiro\Units\uLoading.pas</Transaction>
+    <Transaction>2023/07/28 20:56:32.000.049,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/07/28 20:58:29.000.078,E:\Delphi\Projetos\Controle Financeiro\VariaveisGlobais.pas=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/07/28 21:02:39.000.729,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/07/28 21:02:57.000.250,E:\Delphi\Projetos\Controle Financeiro\Function\Funcoes.pas=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/02 21:41:37.000.755,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/02 21:41:48.000.158,E:\Delphi\Projetos\Controle Financeiro\Unit1.fmx=E:\Delphi\Projetos\Controle Financeiro\fMensagem.fmx</Transaction>
+    <Transaction>2023/08/02 21:41:48.000.158,E:\Delphi\Projetos\Controle Financeiro\Unit1.pas=E:\Delphi\Projetos\Controle Financeiro\fMensagem.pas</Transaction>
+    <Transaction>2023/08/10 20:50:15.000.562,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/10 20:50:51.000.781,E:\Delphi\Projetos\Controle Financeiro\uLogin.fmx=E:\Delphi\Projetos\Controle Financeiro\Unit1.fmx</Transaction>
+    <Transaction>2023/08/10 20:50:51.000.781,E:\Delphi\Projetos\Controle Financeiro\uLogin.pas=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/10 20:51:03.000.638,=E:\Delphi\Projetos\Controle Financeiro\Unit2.pas</Transaction>
+    <Transaction>2023/08/10 20:51:12.000.399,E:\Delphi\Projetos\Controle Financeiro\uCadastroLancamento.pas=E:\Delphi\Projetos\Controle Financeiro\Unit2.pas</Transaction>
+    <Transaction>2023/08/10 20:51:12.000.399,E:\Delphi\Projetos\Controle Financeiro\uCadastroLancamento.fmx=E:\Delphi\Projetos\Controle Financeiro\Unit2.fmx</Transaction>
+    <Transaction>2023/08/10 21:17:13.000.953,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/10 21:20:22.000.369,E:\Delphi\Projetos\Controle Financeiro\uCadastroUsuario.fmx=E:\Delphi\Projetos\Controle Financeiro\Unit1.fmx</Transaction>
+    <Transaction>2023/08/10 21:20:22.000.369,E:\Delphi\Projetos\Controle Financeiro\uCadastroUsuario.pas=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/13 20:24:52.000.947,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/13 20:25:26.000.726,E:\Delphi\Projetos\Controle Financeiro\Unit1.fmx=E:\Delphi\Projetos\Controle Financeiro\fOpcaoLista.fmx</Transaction>
+    <Transaction>2023/08/13 20:25:26.000.726,E:\Delphi\Projetos\Controle Financeiro\Unit1.pas=E:\Delphi\Projetos\Controle Financeiro\fOpcaoLista.pas</Transaction>
+    <Transaction>2023/08/13 22:46:59.000.099,E:\Delphi\Projetos\Controle Financeiro\ControleFinanceiro2.dproj=E:\Delphi\Projetos\Controle Financeiro\ControleFinanceiro.dproj</Transaction>
+    <Transaction>2023/08/13 23:58:44.000.017,E:\Delphi\Projetos\Controle Financeiro\ControleFinanceiro.dproj=E:\Delphi\Projetos\Controle Financeiro\ControleFinanceiro2.dproj</Transaction>
+    <Transaction>2023/08/14 21:14:17.000.158,=E:\Delphi\Projetos\Controle Financeiro\Unit1.pas</Transaction>
+    <Transaction>2023/08/14 21:14:58.000.784,E:\Delphi\Projetos\Controle Financeiro\Unit1.pas=E:\Delphi\Projetos\Controle Financeiro\uSplash.pas</Transaction>
+    <Transaction>2023/08/14 21:14:58.000.784,E:\Delphi\Projetos\Controle Financeiro\Unit1.fmx=E:\Delphi\Projetos\Controle Financeiro\uSplash.fmx</Transaction>
+    <Transaction>2023/08/15 21:07:39.000.648,E:\Delphi\Projetos\Controle Financeiro\ControleFinanceiro.dproj=E:\Delphi\Projetos\Controle Financeiro\ContraWise.dproj</Transaction>
+    <Transaction>2023/08/15 21:07:51.000.757,E:\Delphi\Projetos\Controle Financeiro\ContraWise.dproj=E:\Delphi\Projetos\Controle Financeiro\ContaWise.dproj</Transaction>
+    <Transaction>2023/08/26 18:10:27.000.894,=E:\Delphi\Projetos\ContaWise\Unit1.pas</Transaction>
+    <Transaction>2023/09/12 19:41:24.000.771,=E:\Delphi\Projetos\ContaWise\Unit1.pas</Transaction>
+    <Transaction>2023/09/12 19:43:35.000.525,E:\Delphi\Projetos\ContaWise\Unit1.pas=E:\Delphi\Projetos\ContaWise\uCadastroCategoria.pas</Transaction>
+    <Transaction>2023/09/12 19:43:35.000.525,E:\Delphi\Projetos\ContaWise\Unit1.fmx=E:\Delphi\Projetos\ContaWise\uCadastroCategoria.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

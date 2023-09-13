@@ -1,0 +1,96 @@
+unit uLogin;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, fMensagem,
+  fOpcaoLista;
+
+type
+  TFrmLogin = class(TForm)
+    RBackground: TRectangle;
+    LoBase: TLayout;
+    LoTopo: TLayout;
+    LoCorpo: TLayout;
+    LoRodape: TLayout;
+    LoTopoRight: TLayout;
+    LoTopoLeft: TLayout;
+    LoTopoCenter: TLayout;
+    RBackgroundTopo: TRectangle;
+    LblTituloLogin: TLabel;
+    Layout1: TLayout;
+    Layout2: TLayout;
+    Layout3: TLayout;
+    ImageLogo: TImage;
+    Layout4: TLayout;
+    LblRedefinirSenha: TLabel;
+    BtnEntrar: TRectangle;
+    Label5: TLabel;
+    BtnCriarConta: TRectangle;
+    Label6: TLabel;
+    Label7: TLabel;
+    Rectangle3: TRectangle;
+    LblDireitosAutorais: TLabel;
+    LblDesenvolvedor: TLabel;
+    LblVersao: TLabel;
+    Layout5: TLayout;
+    Label2: TLabel;
+    Layout9: TLayout;
+    EditUsuario: TEdit;
+    RFundoLogoUser: TRectangle;
+    ImageUser: TImage;
+    Layout6: TLayout;
+    Label3: TLabel;
+    Layout7: TLayout;
+    EditSenha: TEdit;
+    RFundoLogoLock: TRectangle;
+    ImageLock: TImage;
+    FrameMensagem1: TFrameMensagem;
+    FrameOpcaoLista1: TFrameOpcaoLista;
+    procedure BtnCriarContaClick(Sender: TObject);
+    procedure BtnEntrarClick(Sender: TObject);
+    procedure BtnEntrarMouseEnter(Sender: TObject);
+    procedure LblRedefinirSenhaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.fmx}
+
+uses uCadastroUsuario, VariaveisGlobais, uPrincipal, fOpcaoLista;
+
+procedure TFrmLogin.BtnCriarContaClick(Sender: TObject);
+begin
+    FrameMensagem1.MostraMensagem(xMsgTipoSUCESSO, 'CONFIRMAÇÃO DE CADASTRO','Suas informações foram salvas com sucesso, parabéns!', true);
+    //FrmCadastroUsuario := TFrmCadastroUsuario.Create(Self);
+    //FrmCadastroUsuario.Show;
+end;
+
+procedure TFrmLogin.BtnEntrarClick(Sender: TObject);
+begin
+    FrameMensagem1.MostraMensagem(xMsgTipoINFORMATIVA, 'FALHA NA AUTENTICAÇÃO','Suas informações estão incorretas, por favor, tente novamente!', true);
+    //FrameMensagem1.Visible := true;
+end;
+
+procedure TFrmLogin.BtnEntrarMouseEnter(Sender: TObject);
+begin
+    {$IFDEF WINDOWS}
+       //
+    {$ENDIF}
+end;
+
+procedure TFrmLogin.LblRedefinirSenhaClick(Sender: TObject);
+begin
+    FrameMensagem1.MostraMensagem(xMsgTipoNome, 'INFORMAÇÃO SOBRE CADASTRO','Necessario preencher todas informações!', true);
+end;
+
+end.

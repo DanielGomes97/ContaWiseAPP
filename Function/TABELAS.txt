@@ -1,0 +1,62 @@
+TABELAS: 
+USUARIO, //
+CATEGORIA, LANCAMENTO, PARCELA, CONFIG
+
+CREATE DATABASE CONTROLE;
+USE CONTROLE;
+GO;
+
+
+
+CREATE TABLE USUARIO (
+	CodUsuario INTEGER NOT NULL,
+	NomeCompleto VARCHAR(80),
+	Email VARCHAR(50),
+	Celular VARCHAR(20),
+	Login VARCHAR(20) NOT NULL,
+	Senha VARCHAR(20) NOT NULL,
+	DataNascimento DATE NOT NULL,
+	PRIMARY KEY ("CodUsuario")
+);
+
+
+CREATE TABLE CONFIGURACAO(
+	CodConfig INTEGER NOT NULL,
+	CodUsuario INTEGER NOT NULL,
+	Som    VARCHAR(1),
+	Musica VARCHAR(1),
+	Notificacao VARCHAR(1),
+	Tema   VARCHAR(1),
+	PRIMARY KEY ("CodConfig")
+);
+
+CREATE TABLE LANCAMENTO(
+	CodLancamento INTEGER NOT NULL,
+	CodUsuario INTEGER NOT NULL,
+	Descricao VARCHAR(80),
+	CodCategoria INTEGER NOT NULL,
+	Valor VARCHAR(20),
+	DataCadastro DATE,
+	TipoLancamento VARCHAR(1),
+	Repetir VARCHAR(1),
+	Parcelado VARCHAR(1),
+	PRIMARY KEY ("CodLancamento")
+);
+
+CREATE TABLE CATEGORIA(
+	CodCategoria INTEGER NOT NULL,
+	Descricao VARCHAR(80),
+	PRIMARY KEY ("CodCategoria")
+);
+
+CREATE TABLE PARCELADO(
+	CodParcela INTEGER NOT NULL,
+	CodLancamento INTEGER NOT NULL,
+	CodUsuario INTEGER NOT NULL,
+	DataInicio DATE,
+	ParcelaAtual INTEGER,
+	ParcelaTotal INTEGER,
+	Status VARCHAR(20),
+	PRIMARY KEY ("CodParcela")
+);
+

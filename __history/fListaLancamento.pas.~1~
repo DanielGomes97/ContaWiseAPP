@@ -1,0 +1,38 @@
+unit fListaLancamento;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Controls.Presentation, FMX.Layouts;
+
+type
+  TFrame2 = class(TFrame)
+    Layout1: TLayout;
+    Layout2: TLayout;
+    ImgPago: TImage;
+    LblStatus: TLabel;
+    Layout3: TLayout;
+    LblParcela: TLayout;
+    Label4: TLabel;
+    Layout6: TLayout;
+    LblDescricao: TLabel;
+    Layout7: TLayout;
+    LblData: TLabel;
+    LblCategoria: TLabel;
+    Layout5: TLayout;
+    RecBarColor: TRectangle;
+    LblValor: TLabel;
+    Rectangle2: TRectangle;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.fmx}
+
+end.
