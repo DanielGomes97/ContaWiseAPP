@@ -8,7 +8,9 @@ uses
   Data.Bind.Controls, FMX.ListView.Types, FMX.ListView.Appearances,
   FMX.ListView.Adapters.Base, FMX.Edit, FMX.ListView, fMensagem,
   Fmx.Bind.Navigator, FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls,
-  FMX.Layouts;
+  FMX.Layouts, Data.Bind.EngExt, Fmx.Bind.DBEngExt, System.Rtti,
+  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Components,
+  Data.Bind.DBScope, Data.DB;
 
 type
   TFrmCadastroCategoria = class(TForm)
@@ -62,6 +64,14 @@ type
     Layout12: TLayout;
     LblCodigo: TLabel;
     Label8: TLabel;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkPropertyToFieldText: TLinkPropertyToField;
+    LinkControlToField1: TLinkControlToField;
+    procedure BtnSalvarClick(Sender: TObject);
+    procedure BtnVoltarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure BtnCancelarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -74,5 +84,56 @@ var
 implementation
 
 {$R *.fmx}
+
+uses Funcoes, VariaveisGlobais, DataModulo;
+
+procedure TFrmCadastroCategoria.BtnCancelarClick(Sender: TObject);
+begin
+    if DM.TblCategoria.State in [dsInsert, dsEdit] then
+    begin
+        DM.TblCategoria.Cancel;
+        ShowMessage('Cancelado com sucesso!');
+    end;
+end;
+
+procedure TFrmCadastroCategoria.BtnSalvarClick(Sender: TObject);
+begin
+    if DM.TblCategoria.State in [dsInsert] then
+    begin
+        if not VerificaExisteDescricao('CATEGORIA', 'DESCRICAO', EditDescricao.Text) then
+        begin
+            ShowMessage('Adicionado com sucesso');
+            DM.TblCategoria.Post;
+        end;
+    end
+    else
+    if DM.TblCategoria.State in [dsEdit] then
+    begin
+        if DM.TblCategoria.FieldByName('Descricao').OldValue <> EditDescricao.Text then
+        begin
+            if not VerificaExisteDescricao('CATEGORIA', 'DESCRICAO', EditDescricao.Text) then
+            begin
+                ShowMessage('Modificado com sucesso');
+                DM.TblCategoria.Post;
+            end
+            else
+            begin
+                ShowMessage('Ja existe');
+            end;
+        end;
+    end;
+
+end;
+
+procedure TFrmCadastroCategoria.BtnVoltarClick(Sender: TObject);
+begin
+    DM.TblCategoria.Cancel;
+    Close;
+end;
+
+procedure TFrmCadastroCategoria.FormCreate(Sender: TObject);
+begin
+    DM.TblCategoria.Open();
+end;
 
 end.

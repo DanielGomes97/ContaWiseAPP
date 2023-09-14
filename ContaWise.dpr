@@ -24,6 +24,5 @@ begin
   Application.Initialize;
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.CreateForm(TDM, DM);
-  Application.CreateForm(TFrmCadastroCategoria, FrmCadastroCategoria);
   Application.Run;
 end.

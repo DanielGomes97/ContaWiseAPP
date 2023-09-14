@@ -7,7 +7,6 @@ USE CONTROLE;
 GO;
 
 
-
 CREATE TABLE USUARIO (
 	CodUsuario INTEGER NOT NULL,
 	NomeCompleto VARCHAR(80),

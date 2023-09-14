@@ -17,7 +17,8 @@ uses
     function AtualizaDataSelecionada(Proximo: Boolean): String;
     function AtualizaTextoMes: String;
     function IncrementaNovoCodigo(Tbl: TDataSet; Codigo: String): Integer;
-    function VerificaExisteDados(Tabela, CampoPesquisa, Parametro: String): Boolean;
+    function VerificaExisteDescricao(Tabela, CampoPesquisa, Parametro: String): Boolean;
+    function VerificaExisteCodigo(Tabela, CampoPesquisa: String; Parametro: Integer): Boolean;
     function RecuperaDescricao(Tabela, Descricao, Codigo: String;  Parametro: Integer = 0): String;
     procedure AlimentaCboVG(LVCombo: TListView; Tabela, Codigo, Descricao: String);
     function ApagaRegistro(Tabela, Codigo: String; Parametro: Integer): Boolean;
@@ -86,14 +87,31 @@ begin
 end;
 
 
-function VerificaExisteDados(Tabela, CampoPesquisa, Parametro: String): Boolean;
+function VerificaExisteDescricao(Tabela, CampoPesquisa, Parametro: String): Boolean;
+begin
+    with FDQConsulta do
+    begin
+        Close;
+        SQL.Clear;
+        SQL.Add('SELECT '+CampoPesquisa+' FROM '+Tabela+' WHERE '+CampoPesquisa+' =:pPesquisa');
+        Params.ParamByName('pPesquisa').AsString := Parametro;
+        Open();
+
+        if RecordCount > 0 then
+            Result := True
+        else
+            Result := False;
+    end;
+end;
+
+function VerificaExisteCodigo(Tabela, CampoPesquisa: String; Parametro: Integer): Boolean;
 begin
     with FDQConsulta do
     begin
         Close;
         SQL.Clear;
         SQL.Add('SELECT '+CampoPesquisa+' FROM '+Tabela+' WHERE '+CampoPesquisa+' =:pCodigo');
-        Params.ParamByName('pCodigo').AsInteger := Parametro.ToInteger;
+        Params.ParamByName('pCodigo').AsInteger := Parametro;
         Open();
 
         if RecordCount > 0 then

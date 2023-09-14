@@ -20,6 +20,7 @@ object DM: TDM
     Top = 96
   end
   object TblCategoria: TFDTable
+    IndexFieldNames = 'CodCategoria'
     Connection = FrmPrincipal.FDConexao
     ResourceOptions.AssignedValues = [rvEscapeExpand]
     TableName = 'Categoria'

@@ -1,0 +1,768 @@
+object FrmCadastroCategoria: TFrmCadastroCategoria
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 800
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LoBase: TLayout
+    Align = Client
+    Size.Width = 480.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object RBackground: TRectangle
+      Align = Contents
+      Fill.Color = xFF343434
+      Size.Width = 480.000000000000000000
+      Size.Height = 800.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object LoTopo: TLayout
+      Align = Top
+      Size.Width = 480.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object RBackgroundTopo: TRectangle
+        Align = Contents
+        Fill.Color = xFF4122D9
+        Size.Width = 480.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object LoTopoRight: TLayout
+        Align = Right
+        HitTest = True
+        Position.X = 430.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object BtnNovo: TRectangle
+          Align = Client
+          Cursor = crHandPoint
+          Fill.Kind = None
+          Size.Width = 50.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Label4: TLabel
+            Align = Bottom
+            StyledSettings = [Family, Style]
+            Locked = True
+            Position.Y = 35.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'novo'
+            TabOrder = 1
+          end
+          object Layout6: TLayout
+            Align = Contents
+            Locked = True
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object Rectangle8: TRectangle
+              Align = Center
+              Cursor = crHandPoint
+              Fill.Bitmap.Bitmap.PNG = {
+                89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                004249444154484B631805A300057CFDFAF53F0843B9440126284D33306A0141
+                40730B18A1340A2035A5C000373737867934F7014960341FD0040C7D0B46C1B0
+                070C0C00C7451390F38FD72A0000000049454E44AE426082}
+              Fill.Bitmap.WrapMode = TileStretch
+              Fill.Kind = Bitmap
+              Locked = True
+              HitTest = False
+              Size.Width = 40.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+            end
+          end
+        end
+      end
+      object LoTopoLeft: TLayout
+        Align = Left
+        Size.Width = 65.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object BtnVoltar: TRectangle
+          Align = Center
+          Cursor = crHandPoint
+          Fill.Bitmap.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D4948445200000023000000200806000000984DC1
+            F7000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            00C6494441545847ED96BD0D02310C8523266004466003D80436800DB80D6004
+            366104466004CA14F9E3597A399DA8AEB9B30B7F8DA3577D4A2CC7C1719C3F5A
+            6B5B1E7581C82EA5F429A5DC19E9D045628C5F39335E1F799A89C89EF1FA8848
+            CEF98DDA6AAD07C63AA03F5E143931D2010E4F8A5C18E9801B7950E4C6480738
+            0C2E32050E67115962A86D5867030F1BA3BE23CF23B7030646BA981392BE3125
+            04913EF4AE8C7431F31D08F0183F4A7064AC07246CAC101D48D858AE3A5D6889
+            09ED38CE3C42F80152A4E74607CAC75B0000000049454E44AE426082}
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Size.Width = 46.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object LoTopoCenter: TLayout
+        Align = Client
+        Size.Width = 365.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LblTitulo: TLabel
+          Align = Client
+          StyledSettings = [Family, Style]
+          Size.Width = 365.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.FontColor = xFFEFEFEF
+          TextSettings.HorzAlign = Center
+          Text = 'CADASTRO CATEGORIA'
+          TabOrder = 0
+        end
+      end
+    end
+    object LoCorpo: TLayout
+      Align = Client
+      Size.Width = 480.000000000000000000
+      Size.Height = 548.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 548.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout17: TLayout
+          Align = Top
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 440.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object BtnExcluir: TRectangle
+            Align = Right
+            Cursor = crHandPoint
+            Fill.Kind = None
+            Position.X = 368.000000000000000000
+            Size.Width = 72.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Layout7: TLayout
+              Align = Left
+              Locked = True
+              Size.Width = 28.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Image4: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      007549444154484BEDD0410A80201005504B771EB46ED081A34EA02B856AE02F
+                      0AB541A885320FC45161BE8C129F70CE2DDEFBE3BEE80ECFAF06EC0FD4006515
+                      6B6DD26FC4DEAEEC8848ED9872E321BF8F48025812C0920056C70121840D252B
+                      C6B8A24C14038C31D315B2E358441FD15ACF387647A913F2E52E7DECA47CA100
+                      00000049454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Trash Can' +
+                      '_24px.png'
+                  end>
+                Align = Center
+                Locked = True
+                HitTest = False
+                Size.Width = 20.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object Label3: TLabel
+              Align = Client
+              StyledSettings = [Family, Style]
+              Locked = True
+              Size.Width = 44.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = xFFD21616
+              Text = 'Excluir'
+              TabOrder = 1
+            end
+          end
+          object Layout12: TLayout
+            Align = Client
+            Size.Width = 368.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object LblCodigo: TLabel
+              Align = Client
+              StyledSettings = [Family]
+              Locked = True
+              Size.Width = 311.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 14.000000000000000000
+              TextSettings.FontColor = claWhite
+              Text = '1'
+              TabOrder = 1
+            end
+            object Label8: TLabel
+              Align = Left
+              StyledSettings = [Family]
+              Locked = True
+              Size.Width = 57.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 14.000000000000000000
+              TextSettings.FontColor = claWhite
+              Text = 'C'#243'digo:'
+              TabOrder = 0
+            end
+          end
+        end
+        object Layout4: TLayout
+          Align = Top
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 71.000000000000000000
+          Size.Width = 440.000000000000000000
+          Size.Height = 98.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Layout5: TLayout
+            Align = Top
+            Margins.Bottom = 15.000000000000000000
+            Size.Width = 440.000000000000000000
+            Size.Height = 65.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object EditDescricao: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Bottom
+              StyleLookup = 'Edit'
+              TabOrder = 0
+              KeyboardType = Alphabet
+              ReturnKeyType = Next
+              TextSettings.Font.Size = 14.000000000000000000
+              TextSettings.FontColor = xFF854CF0
+              Position.Y = 33.000000000000000000
+              Size.Width = 440.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family, Style]
+            end
+            object Layout10: TLayout
+              Align = Client
+              Size.Width = 440.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Label2: TLabel
+                Align = Left
+                StyledSettings = [Family]
+                Locked = True
+                Size.Width = 353.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
+                Text = 'DESCRI'#199#195'O'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+    object LoRodape: TLayout
+      Align = Bottom
+      Position.Y = 608.000000000000000000
+      Size.Width = 480.000000000000000000
+      Size.Height = 192.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle3: TRectangle
+        Align = Contents
+        Fill.Color = xFF4122D9
+        Size.Width = 480.000000000000000000
+        Size.Height = 192.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Layout1: TLayout
+          Align = Top
+          Margins.Bottom = 40.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Layout18: TLayout
+            Align = Client
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Size.Width = 440.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object BtnSalvar: TRectangle
+              Align = Left
+              Cursor = crHandPoint
+              Fill.Kind = None
+              Margins.Top = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 201.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 5.000000000000000000
+              YRadius = 5.000000000000000000
+              object Image1: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      00EF49444154484BED944D0E82301085698115241CC068E21574613C8307D11B
+                      E81174EDB54CBC837F6B48800D2475A80F4391CA4F58A8F1DBCC3CD29997CE34
+                      187FEA608892300C1742883DE77C8C4F8DA1BA8DEBBA3BC8278A41100427CBB2
+                      869012C771943365A22812482B4D38A2A4DC5C47D6B4D8388731B6A529AC2125
+                      8A411F64264825BD1B94E96490EDA56E3739CAA1AAB976A168FE99236A837644
+                      F4A627F4A68F906FA1BA2985C343A923D21A345D628EAEF6FB77F0C306B4B419
+                      D25AE2389E237D417929BEEF5F6CDB1E4076224DD3B3E7792348F506F4BB5E26
+                      4972836C0DD55E4DD35C41FE698261DC01CF51527310E5F7F10000000049454E
+                      44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Save_24px' +
+                      '.png'
+                  end>
+                Align = Left
+                Margins.Left = 8.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 8.000000000000000000
+                Size.Width = 30.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object Label7: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Locked = True
+                Size.Width = 158.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                Text = 'Salvar altera'#231#245'es'
+                TabOrder = 1
+              end
+            end
+            object BtnCancelar: TRectangle
+              Align = Right
+              Cursor = crHandPoint
+              Fill.Kind = None
+              Margins.Top = 10.000000000000000000
+              Margins.Bottom = 10.000000000000000000
+              Position.X = 264.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 176.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              XRadius = 5.000000000000000000
+              YRadius = 5.000000000000000000
+              object Image5: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      024649444154484BD595CF4B545114C7DF1BE8C530332121EE930AC4A252FA07
+                      4C176D44DAF63F382D425CD84A4B8412FD27DC89128290D13F10A92D842270D9
+                      C2C65ABC196698609E9F73DF993B77DE7BE30FD0855FB89C7BCEB9E77BEE3DE7
+                      DEF7BC6B0F5F65265AADD6CD46A3311545D173D411C6807178DE1163D7F7FDED
+                      7C3EBF816CC6E6347A26A8D56A2F48F03E97CBDD5153265873C89AD785426143
+                      4D5DC8A9B460B73EE40B4CD7CF2217B066300CC37562E62556CD1629030B9710
+                      33B176612C7192599D1B7425807C92DD6C964AA5537BD30BC446C5627192B1A5
+                      A64E89385EC0F89020FF438D5F222BB1DA854AD2A7B1CBF0DC882D4E827ABD3E
+                      C56DB8ABAA017A99A0350226508F63ABC131B671F191A4AC360362EE0997AA9D
+                      042CB4C6362059E5D80F38F2BE26F92B43E6D8BEE37B489357CC6207F82D972D
+                      47B55AFD49F6FBAABA3822F918BB3DA047A3044B9D77211F86FC0BFEF6DB70F1
+                      83660FC9C44D1092A0A86A12FF1813047D134512213E33FA44CF40C8DA5B3249
+                      BD831E8854BAC8B2A5E026F8AD3209D350D9BDEC9C938EC85C6CF8A42759B05C
+                      6E0273FC042A4244CDF7207E82FE8932EEC85CFA80EF1936F776B561B96C021A
+                      B6A9530BC8A6E50641F8588831DD96A1491E898F0B306D163BC06FB96C93D94D
+                      40090E70BA6F411EDA2B92AF32EF8F4D16F2D0CA491F3CBF28E1303CFF45775F
+                      EDD57E2A0464FE88F38DAA1706B1732EB920754D49F20EF136D6CE07D9396281
+                      D8C5D8D241CF5250AE4BF9E19C5A6B82DD5FE6D366B33928F620080E115F69E4
+                      99BFCCEB0ECF3B01A2D3205C3E28FE2D0000000049454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Cancel_24' +
+                      'px.png'
+                  end>
+                Align = Left
+                Margins.Left = 8.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 8.000000000000000000
+                Size.Width = 30.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object Label11: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Locked = True
+                Size.Width = 133.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                Text = 'Cancelar opera'#231#227'o'
+                TabOrder = 1
+              end
+            end
+          end
+        end
+        object Layout13: TLayout
+          Align = Top
+          Position.Y = 100.000000000000000000
+          Size.Width = 480.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object BindNavigator1: TBindNavigator
+            Align = Client
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Size.Width = 440.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            DataSource = BindSourceDB1
+            VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+            xRadius = 4.000000000000000000
+            yRadius = 4.000000000000000000
+          end
+        end
+      end
+    end
+    inline FrameMensagem1: TFrameMensagem
+      Align = Contents
+      Size.Width = 480.000000000000000000
+      Size.Height = 800.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      inherited Layout1: TLayout
+        inherited RFundoMensagem: TRectangle
+          inherited RBackgroundTopo: TRectangle
+            inherited Layout3: TLayout
+              inherited ImgConfirmacao: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      01FE49444154484BD595CB4AC340148693A6C694D2A52E1404BBF4B2517C05B5
+                      2052047D03455090567D002F4BDF405FA1D49DE02B88AEDA2E140A2248EBB237
+                      6A2489FF194FDAC44E9352E8A21F9CCC99739DA6331365EC51799462DBF664BB
+                      DD4E3B8E93C27405322D1C8AF205795155F521168BE5319A7FE65EFA3668369B
+                      3B6870138944E6D924053165C49CC5E3F13C9B7C4478EC80D5AA287E0D35C7C5
+                      8B902C0A2D59963545027D19AB3E85BD849864BD5ECF21E78A72610B06819710
+                      A752A998188F91A4B1AB07F221E684631DC805BBE420601BC176B55AFD6E341A
+                      EB6C0E05B19BD48472A16FB1D90F56A3C3F9C62B3964B30FF6393CF501FB11F9
+                      50E315B526D8DCA5D56AED718142BFD7C27E69037E5D25F2A3D62E9BBB7F32FE
+                      B834ABB7F8032DD60786722077A4A3995BCBB78B56E9815DF2286643E0C9A533
+                      23F03698A1472291F810B321C0A17C67759647E93990BEE361F136F8A40776C1
+                      9C9849C069554978DA8361186EAEA845781B3CD343D3B481F7FF7F90BBC1AAA8
+                      45741AE0C8DFB37A80B71465DD47C8368D42F649C76E726B7581D37BD0326CF6
+                      11D400B9E7E4EB7BD0080488AB828E3D02DD9F1B0A6253C8F909BC2A5CD06474
+                      971D8124715D7302490192A9D56A0BF01924B89E17711D64612F520CAD1CA3F4
+                      BA1EF90727F0038164EF2773CD34CD24D9755D2F6378C26E09FD648E3B8AF20B
+                      6DE4A8B17B5053100000000049454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Attention' +
+                      '_24px.png'
+                  end>
+              end
+              inherited ImgInformacao: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      01B249444154484BD595CD4A025114C79D0946455DB48A7651B46A13D44BB4EA
+                      037D8AA0088AE8056A1144448F9129B4E821825CD5A2A0DAB46EA1A22939FDEE
+                      F5789D693E549C4D3F18CE3D877BFFE7DCCF49FD7B2CB1A1F47ABD74B3D92C59
+                      96B5EDBAEEAA6DDBB312FF22562356C9E57237C4BFF580102213205C44E89CC1
+                      0B120A853EEFF439225159423E0209A86A06F10B2ADC93D05830EE9224878CFB
+                      91902690A0D1685CD36957DC8920C9553E9FDF1757E34B40E55B984ADF9B9C7A
+                      BDEE160A854D667227A16102B23B2478A6FA25090560A0EE4F3F57074240E795
+                      7E2BE874956FEB28B45AAD9D38F1714163192DB5121A9380D3608251A8CAE3AA
+                      1FC02C8209604D6C12182D9380A9CD493312B507837D18C1BC58DF127967332D
+                      A608EF0C3EA5990446CB5B754D6C123C8A1D26E03DA94A736A580DA3651264B3
+                      D932C7EB45DC697842EB56DABE3DE8F21D8B1BCAA87BA09E0ACC093AE6C1F3EE
+                      813A866A6A677D6F7278874ED130EF902270A659A6449F6BDF0C14AA833CB925
+                      EEC6473F1A8DFAE1608A8C39F82BAE88BD950C4EB7DB6DF5BBDCC05DEF743A8B
+                      2AEE38CE1BE601C1FB4C26538DFB65FE7752A95FAD54AAFAA5303C2A00000000
+                      49454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Info_24px' +
+                      '.png'
+                  end>
+              end
+              inherited ImgSucesso: TImage
+                MultiResBitmap.Height = 24
+                MultiResBitmap.Width = 24
+                MultiResBitmap = <
+                  item
+                    Width = 24
+                    Height = 24
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      024149444154484BD595CF4B545114C7E717E3FC660A211204536A134254EB70
+                      E1461796E1ECFA0F824250B06DA42E0289E85F6813C5282E5CA8883B212CDAB8
+                      11D385B84C98DF336F7EF4B96FCE5CDF9B3763F3C0167EE171EE39F7DEEFF79C
+                      F7CEBDCF73EDE115DB11F57ABD2F9FCFA7BC5EEF74A3D178E0F3F96E48FC9CD8
+                      4F62E96834FA9578D9DCD0015D05209E81E83D9B8724D411AC3966CD3C42DF24
+                      64834380ACFC90AF90E12B09F504F67D40648E7D3509997008E472B94F2C7A29
+                      AE2B20F231168BBD16D7844D80CC9F61D24DCF3DB2D96C231E8F3FA59275095D
+                      08A01E44E080EC4724D41320AD43EA1357F11C22701F1E43F97AA2582C3E774B
+                      0ED951241219E543EF49C803C75DB8D49B30A10558A483BDA05AAD9EFAFDFEF1
+                      4422A1AA7E276113083B05C023B1FF84611867C160702C1C0E9F140A852724F7
+                      45A65AD05C5A802C6EC9B01D19B12D9C07028149C88F78FFA3649BA69288CCB5
+                      705BACED1559AB31C1E65DB2BDC3DC9AF839CC24ADF8AB542ADDE3806DE2DF54
+                      736DD0CD63ADE04C86566C2793C93F10A6187F46608A0ED9E3230E95CBE52D62
+                      DDAAD65CD6AC7F88D540F42D076F016B40FC8276DCA195076AB5DA16AF695096
+                      75C2BED80B01CA5D95A10D902F23F2468D33994C3F6693D8A5EDCCBCE67273D0
+                      167926781E9A5E17C0633B68FFFDAAB0750E13AAB4E5A6E71E902F59C9156C15
+                      2850E2955ED78EDE570BE4CA4DD1FF27CD6877B0E61833C39ED9767205470556
+                      B0B98F03A57E97EAE33EAE542AC32ACE35F11BF31DC28D5028B47AD92FF3BAC3
+                      E3F90B3E8BFDDAC71183990000000049454E44AE426082}
+                    FileName = 
+                      'E:\Delphi\Projetos\Controle Financeiro\Assets\ModoDark\Ok_24px.p' +
+                      'ng'
+                  end>
+              end
+            end
+          end
+          inherited Layout6: TLayout
+            inherited LblTextoMensagem: TLabel
+              inherited Rectangle2: TRectangle
+                Fill.Bitmap.Bitmap.PNG = {
+                  89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                  F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  01FE49444154484BD595CB4AC340148693A6C694D2A52E1404BBF4B2517C05B5
+                  2052047D03455090567D002F4BDF405FA1D49DE02B88AEDA2E140A2258EAB237
+                  6A2489FF194FDAC44E9352E8A21F9CCC99739DA6331365EC51799462DBF664BB
+                  DD4E3B8E93C27405322D1C8AF205795155F521168BE5319A7FE65EFA3668369B
+                  3B6870138944E6D924053165C49CC5E3F13C9B7C4478EC80D5AA287E0D35C7C5
+                  8B902C0A2D59963545027D19AB3E85BD849864AD56CB21E78A72610B06819710
+                  A752A998188F91A4B1AB07F221E684631DC805BBE420601BC176B55AFD6E341A
+                  EB6C0E05B19BD48472A16FB1D90F56A3C3F9C62B3964B30FF6393CF501FB11F9
+                  50E315B526D8DCA5D56AED718142BFD7C27E69037E5D25F2A3D62E9BBB7F32FE
+                  B834ABB7F8032DD60786722077A4A3995BCBB78B56E9815DF2286643E0C9A533
+                  23F03698A1472291F810B321C0A17C67759647E93990BEE361F136F8A40776C1
+                  9C9849C069554978DA8361186EAEA845781B3CD343D3B481F7FF7F90BBC1AAA8
+                  45741AE0C8DFB37A80B71465DD47C8368D42F649C76E726B7581D37BD0326CF6
+                  11D400B9E7E4EB7BD0080488AB828E3D02DD9F1B0A6253C8F909BC2A5CD06474
+                  971D8124715D7302490192C195BC009F4152AFD717711D64612F520CAD1CA3F4
+                  BA1EF90727F0038164EF2773CD34CD24D9755D2F6378C26E09FD648E3B8AF20B
+                  C380A88AFD8ABE400000000049454E44AE426082}
+              end
+            end
+            inherited LoPainelEdit: TLayout
+              inherited EditNomeLista: TEdit
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+    object RecCombo: TRectangle
+      Align = Contents
+      Fill.Color = claWhite
+      Size.Width = 480.000000000000000000
+      Size.Height = 800.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Visible = False
+      object LVCombo: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        EditMode = True
+        Transparent = True
+        Align = Client
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 40.000000000000000000
+        Size.Width = 440.000000000000000000
+        Size.Height = 685.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearance.ItemEditHeight = 50
+        ItemAppearanceObjects.ItemEditObjects.Text.Font.Size = 16.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.Text.Width = 366.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.Text.Height = 50.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.Text.PlaceOffset.X = -32.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.Accessory.Width = 38.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.Accessory.Height = 30.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.Accessory.Visible = True
+        ItemAppearanceObjects.ItemEditObjects.Accessory.PlaceOffset.X = -32.000000000000000000
+        ItemAppearanceObjects.ItemEditObjects.GlyphButton.Visible = False
+        CanSwipeDelete = False
+        ShowSelection = False
+      end
+      object Layout9: TLayout
+        Align = Top
+        Size.Width = 480.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rectangle5: TRectangle
+          Align = Contents
+          Fill.Color = xFF7B7B7B
+          Size.Width = 480.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object Layout15: TLayout
+          Align = Right
+          HitTest = True
+          Position.X = 430.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+        object Layout19: TLayout
+          Align = Left
+          Size.Width = 65.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object BtnFecharLV: TRectangle
+            Align = Center
+            Cursor = crHandPoint
+            Fill.Bitmap.Bitmap.PNG = {
+              89504E470D0A1A0A0000000D4948445200000023000000200806000000984DC1
+              F7000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              00C6494441545847ED96BD0D02310C8523266004466003D80436800DB80D6004
+              366104466004CA14F9E3597A399DA8AEB9B30B7F8DA3577D4A2CC7C1719C3F5A
+              6B5B1E7581C82EA5F429A5DC19E9D045628C5F39335E1F799A89C89EF1FA8848
+              CEF98DDA6AAD07C63AA03F5E143931D2010E4F8A5C18E9801B7950E4C6480738
+              0C2E32050E67115962A86D5867030F1BA3BE23CF23B7030646BA981392BE3125
+              04913EF4AE8C7431F31D08F0183F4A7064AC07246CAC101D48D858AE3A5D6889
+              09ED38CE3C42F80152A4E74607CAC75B0000000049454E44AE426082}
+            Fill.Bitmap.WrapMode = TileStretch
+            Fill.Kind = Bitmap
+            Size.Width = 46.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+        end
+        object Layout23: TLayout
+          Align = Client
+          Size.Width = 365.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label9: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Size.Width = 365.000000000000000000
+            Size.Height = 60.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = xFFEFEFEF
+            TextSettings.HorzAlign = Center
+            Text = 'ESCOLHA A CATEGORIA'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DM.TblCategoria
+    ScopeMappings = <>
+    Left = 224
+    Top = 384
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'CodCategoria'
+      Component = LblCodigo
+      ComponentProperty = 'Text'
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Descricao'
+      Control = EditDescricao
+      Track = False
+    end
+  end
+end

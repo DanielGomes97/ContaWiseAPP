@@ -181,7 +181,7 @@ begin
         LoPainelParcelado.Visible := True;
         LoCheckboxParcelado.Visible := True;
 
-        if VerificaExisteDados('LANCAMENTO', 'CodLancamento', LblCodigo.Text) then
+        if VerificaExisteCodigo('LANCAMENTO', 'CodLancamento', LblCodigo.Text.ToInteger) then
         begin
             //LoPainelParcelado.Visible := true;
             LoCheckboxParcelado.Visible := False;
@@ -467,6 +467,7 @@ begin
     begin
         FrmCadastroCategoria := TFrmCadastroCategoria.Create(nil);
         FrmCadastroCategoria.Show;
+        RecCombo.Visible := false;
         exit;
     end
     else
